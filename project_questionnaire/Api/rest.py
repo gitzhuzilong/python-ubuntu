@@ -105,7 +105,8 @@ class Rest(object):
         limit = int(questionnaire_data.get('limit', 10))
         with_detail = questionnaire_data.get('with_detail', False)
         questionnaire_id = questionnaire_data.get('id', '')
-        if hasattr(user, 'customer'):
+        print('hello')
+		if hasattr(user, 'customer'):
             user = user.customer
             state = questionnaire_data.get('status', [0])
             questionnaires = Questionnaire.objects.filter(
