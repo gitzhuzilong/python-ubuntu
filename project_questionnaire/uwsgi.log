@@ -1,0 +1,38 @@
+*** Starting uWSGI 2.0.17.1 (64bit) on [Thu Jul 12 19:14:45 2018] ***
+compiled with version: 5.4.0 20160609 on 13 July 2018 01:49:50
+os: Linux-4.13.0-43-generic #48~16.04.1-Ubuntu SMP Thu May 17 12:56:46 UTC 2018
+nodename: ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 2
+current working directory: /home/waiting/PycharmProjects/project_questionnaire
+writing pidfile to uwsgi.pid
+detected binary path: /home/waiting/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/waiting/PycharmProjects/project_questionnaire
+your processes number limit is 7675
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 0.0.0.0:8000 fd 3
+Python version: 3.6.5 (default, May  3 2018, 10:08:28)  [GCC 5.4.0 20160609]
+Python main interpreter initialized at 0x19ea970
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416880 bytes (407 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x19ea970 pid: 3647 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3647)
+spawned uWSGI worker 1 (pid: 3649, cores: 2)
+spawned uWSGI worker 2 (pid: 3650, cores: 2)
+spawned uWSGI worker 3 (pid: 3652, cores: 2)
+spawned uWSGI worker 4 (pid: 3653, cores: 2)
+invalid request block size: 21589 (max 4096)...skip
+[pid: 3650|app: 0|req: 1/1] 10.8.159.52 () {44 vars in 624 bytes} [Fri Jul 13 02:18:25 2018] PUT /api/v1/registcode => generated 41 bytes in 32 msecs (HTTP/1.1 405) 3 headers in 116 bytes (1 switches on core 0)
+[pid: 3649|app: 0|req: 1/2] 10.8.159.52 () {42 vars in 597 bytes} [Fri Jul 13 02:18:31 2018] GET /api/v1/registcode => generated 66 bytes in 28 msecs (HTTP/1.1 422) 3 headers in 118 bytes (1 switches on core 0)
+[pid: 3649|app: 0|req: 2/3] 10.8.159.52 () {40 vars in 544 bytes} [Fri Jul 13 02:18:34 2018] GET /api/v1/registcode => generated 23 bytes in 25 msecs (HTTP/1.1 200) 5 headers in 245 bytes (1 switches on core 1)
+[pid: 3650|app: 0|req: 2/4] 10.8.159.29 () {40 vars in 544 bytes} [Fri Jul 13 02:24:47 2018] GET /api/v1/registcode => generated 23 bytes in 117 msecs (HTTP/1.1 200) 5 headers in 245 bytes (1 switches on core 1)
+[pid: 3649|app: 0|req: 3/5] 10.8.159.52 () {42 vars in 601 bytes} [Fri Jul 13 06:32:20 2018] GET /api/v1/registcode => generated 23 bytes in 73 msecs (HTTP/1.1 200) 5 headers in 245 bytes (1 switches on core 0)
