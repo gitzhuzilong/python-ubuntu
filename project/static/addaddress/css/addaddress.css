@@ -1,0 +1,69 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #eee;
+}
+
+header, footer{
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    font-size: 1.4rem;
+    /*display: flex;*/
+    z-index: 10;
+}
+
+header{
+    left: 0;
+    top: 0;
+    background-color: #f9fafd;
+    text-align: center;
+    line-height: 5rem;
+    font-weight: 700;
+    border-bottom: 0.1px solid gainsboro;
+}
+
+footer{
+    left: 0;
+    bottom: 0;
+    background-color: snow;
+    border-top: 1px solid #f0f0f0;
+    line-height: 5rem;
+}
+
+.formmain{
+    padding: 5rem 0;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    z-index: 1;
+}
+
+#glyph{
+    font-size: 2.4rem;
+    color: gainsboro;
+    line-height: 5rem;
+    float: left;
+}
+
+select, .addr-input{
+    border: 0;
+    font-size: 1.4rem;
+}
+th{
+    padding: 1rem 0 1rem 1.5rem;
+    text-align: left;
+    width: 7rem;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+td{
+    border: 0;
+}
+

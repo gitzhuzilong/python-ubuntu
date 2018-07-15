@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/swiper.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'detail/css/detail.css' %}">
+    {% block link %}{% endblock link %}
+
+    <script type="text/javascript" src="{% static 'base/js/jquery-3.1.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'base/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'base/js/swiper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'detail/js/detail.js' %}"></script>
+    {% block script %}{% endblock script %}
+</head>
+<body>
+    {% for item in products %}
+        <header><a href="/market/{{ item.categoryId }}/0/0/"><span class="glyphicon glyphicon-menu-left" id="glyph"></span></a>{{ item.longName }}</header>
+    <div id="detailDiv">
+        <div class="goodsImg">
+            <div id="img">
+            <img src="{{ item.img }}"/>
+            </div>
+            <div id="longName">{{ item.longName }}</div>
+            <div id="price"><span id="pri">￥<a id="apri">{{ item.marketPrice }}</a></span> &nbsp;&nbsp;<span id="mpri">￥{{ item.price }}</span></div>
+        </div>
+        <div class="goodsDiv">
+            <div class="title">商品详情</div>
+            <div class="property-item"><span class="leading-word">品<span class="ui-hidden">中中</span><span class="leading-word">牌</span></span><span class="ui-hidden">中</span><span class="content-word">{{ item.brandName }}</span></div>
+            <div class="property-item"><span class="leading-word">产品规格</span><span class="ui-hidden">中</span><span class="content-word">{{ item.specifics }}</span></div>
+            <div class="property-item"><span class="leading-word">保质期限</span><span class="ui-hidden">中</span><span class="content-word">{{ item.safeUnit }}{{ item.safeUnitDesc }}</span></div>
+        </div>
+        <div class="detail-pull">图文详情</div>
+    </div>
+    {% endfor %}
+    <footer>收藏</footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #eee;
+}
+
+header, footer{
+    width: 100%;
+    height: 5rem;
+    position: fixed;
+    font-size: 1.4rem;
+    /*display: flex;*/
+    z-index: 10;
+}
+
+header{
+    left: 0;
+    top: 0;
+    background-color: #f9fafd;
+    text-align: center;
+    line-height: 5rem;
+    font-weight: 700;
+    border-bottom: 0.1px solid gainsboro;
+}
+
+footer{
+    left: 0;
+    bottom: 0;
+    background-color: snow;
+    border-top: 1px solid #f0f0f0;
+    line-height: 5rem;
+}
+
+#detailDiv{
+    padding: 5rem 0;
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+}
+
+#glyph{
+    font-size: 2.4rem;
+    color: gainsboro;
+    line-height: 5rem;
+    float: left;
+
+}
+.goodsImg, .goodsDiv{
+    background-color: white;
+}
+.goodsImg{
+    padding: 4rem;
+}
+
+.goodsDiv{
+    padding: 1rem;
+    margin: 0.4rem 0;
+}
+
+.title {
+    margin-bottom: 1.5rem;
+    background: url(http://www.beequick.cn/static/bee/img/phone/pages/productDetail/title_bg-6dc6dfc1.png) no-repeat center center;
+    background-size: auto .2rem;
+    text-align: center;
+    color: #e0bd6a;
+    font-size: 1.4rem;
+}
+
+.goodsShow{
+    width: 100%;
+    height: 2000px;
+}
+
+.property-item{
+    text-indent: 1rem;
+}
+.ui-hidden{
+    background-color: white;
+    color: white;
+}
+.leading-word{
+    color: #848c99;
+    font-size: 1.4rem;
+}
+
+.content-word{
+    color: #333;
+    font-size: 1.4rem;
+}
+
+.detail-pull{
+    width: 100%;
+    height: 2000px;
+    background-color: white;
+}
+#img,#longName,#price{
+    text-align: center;
+}
+
+#longName{
+    font-size: 2.3rem;
+}
+
+#pri, #apri{
+    color: red;
+    font-size: 2.2rem;
+}
+

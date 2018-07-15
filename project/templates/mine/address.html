@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/swiper.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'base/css/reset.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'address/css/address.css' %}">
+    {% block link %}{% endblock link %}
+
+    <script type="text/javascript" src="{% static 'base/js/jquery-3.1.1.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'base/js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'base/js/swiper.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'address/js/address.js' %}"></script>
+    {% block script %}{% endblock script %}
+</head>
+<body>
+    <header><a href="/mine/"><span class="glyphicon glyphicon-menu-left" id="glyph"></span></a>我的地址</header>
+    <div id="detailDiv">
+        <form>
+            <ul>
+                {% for address in addresses %}
+                    <li>{{ address.name }}&nbsp;&nbsp;{{ address.phoneNum }}<br />{{ address.address }}</li>
+                    <hr>
+                {% endfor %}
+            </ul>
+        </form>
+    </div>
+    <footer><a href="/address/addaddress/"><div class="tap-action">+新增地址</div></a></footer>
+</body>
+</html>

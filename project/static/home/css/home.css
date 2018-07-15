@@ -1,0 +1,72 @@
+#homeDiv{
+    padding: 1.8rem 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+h3 {
+  text-align: center;
+  position: fixed;
+  z-index: +100;
+  width: 100%;
+  border-bottom: 0.04rem solid lightgrey;
+  line-height: 1.8rem;
+  background: #ffd600;
+  top: 0;
+}
+
+#slider{
+    width: 10rem;
+    height: 4rem;
+}
+#slider div a{
+    display: inline-block;
+    width: 10rem;
+    height: 4rem;
+}
+#slider div a img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.description-group{
+    background-color: white;
+    text-align: center;
+}
+.description-group .guide img{
+    height: 2.5rem;
+    width: 9.6rem;
+
+}
+.description-group ul li{
+    background-color: white;
+    display: inline-block;
+}
+
+.product-img img{
+    width: 3rem;
+    height: 3rem;
+    overflow: hidden;
+}
+.long-name{
+    width: 2.4rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.category{
+    float: left;
+    left: 2rem;
+    color: red;
+    padding-left: 0.4rem;
+}
+
+.more{
+    right: 2rem;
+    color: darkgrey;
+    float: right;
+    padding-right: 0.4rem;
+}

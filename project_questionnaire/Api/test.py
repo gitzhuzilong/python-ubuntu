@@ -212,19 +212,22 @@ profitability_measures_b = [
 ]
 
 
-if len(profitability_measures_a) == len(profitability_measures_b):
-    lt = []
-    for i in range(len(profitability_measures_a)):
-        if profitability_measures_a[i]['item'] == profitability_measures_b[i]['item']:
-            print('ok')
-        else:
+# if len(profitability_measures_a) == len(profitability_measures_b):
+#     lt = []
+#     for i in range(len(profitability_measures_a)):
+#         if profitability_measures_a[i]['item'] == profitability_measures_b[i]['item']:
+#             print('ok')
+#         else:
            
-        if profitability_measures_a[i]['this'] == profitability_measures_b[i]['this']:
-            print('ok')
-        if profitability_measures_a[i]['last'] == profitability_measures_b[i]['last']:
-            print('ok')
-        if profitability_measures_a[i]['change_pct'] == profitability_measures_b[i]['change_pct']:
-            print('ok')
+#         if profitability_measures_a[i]['this'] == profitability_measures_b[i]['this']:
+#             print('ok')
+#         if profitability_measures_a[i]['last'] == profitability_measures_b[i]['last']:
+#             print('ok')
+#         if profitability_measures_a[i]['change_pct'] == profitability_measures_b[i]['change_pct']:
+#             print('ok')
 
-else:
-    pass
+# else:
+#     pass
+import numpy as np
+class My_COntainer():
+    data = np.random.randn(3, 2)
