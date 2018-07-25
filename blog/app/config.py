@@ -13,8 +13,8 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     # 邮件发送
     MAIL_SERVER = os.environ.get('MAIL_SERVER') or 'smtp.163.com'
-    MAIL_USERNAME = os.environ.get('MAIL_USERNAME') or 'zhuzilong_lte@163.com'
-    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD') or 'kill@memory'
+    MAIL_USERNAME = os.environ.get('MAIL_USERNAME') or ''
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD') or ''
     # 使用本地bootstrap库
     BOOTSTRAP_SERVE_LOCAL = True
     # 文件上传
