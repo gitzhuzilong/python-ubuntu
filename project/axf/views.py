@@ -1,4 +1,4 @@
-from django.shortcuts import render,redirect
+dfrom django.shortcuts import render,redirect
 from django.http import JsonResponse
 from axf.models import SlideShow, MainDescription, Product,CategorieGroup,ChildGroup,User,Address,Cart,Order
 import random
